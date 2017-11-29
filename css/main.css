@@ -1,0 +1,78 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    /*background: #000 url(../img/log_bg.png) repeat-x center bottom;*/
+    position: relative;
+    background-color: #000;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+#bg {
+    background: url(../img/bricks.jpg) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 1;
+    position: relative;
+}
+
+#bg-pseudo-glow {
+    background: url(../img/pseudo_glow_bricks.jpg) no-repeat center bottom;
+    background-size: auto 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+
+}
+#bg-base {
+    background: url(../img/log_bg.png) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 15;
+    position: relative;
+}
+
+#logs, #logs-foreground {
+    width: 100%;
+    height: 100%;
+    background: url(../img/logs.png) no-repeat center bottom;
+    background-size: 100%;
+    z-index: 50;
+    position: relative;
+}
+#logs-foreground {
+    z-index: 100;
+    background: url(../img/logs_foreground.png) no-repeat center bottom;
+    background-size: 100%;
+}
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 75;
+    /*zoom: 50%;*/
+}
+
+#canvas2 {
+    z-index: 25;
+}
+
+#wrapper {
+    /*background: url(../img/logs.png) no-repeat center bottom;*/
+    background-size: 100%;
+    margin: auto;
+    height: 818px;
+    width: 1200px;
+    z-index: 20;
+    position: relative;
+}
